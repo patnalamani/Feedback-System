@@ -1,0 +1,7 @@
+{
+  "name": "Remix:  SRK-IT - Blockchain Feedback System",
+  "description": "A secure, anonymous, and encrypted faculty feedback system for SRK Institute of Technology, leveraging blockchain concepts for privacy and verifiable transparency.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

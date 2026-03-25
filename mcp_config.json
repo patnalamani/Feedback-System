@@ -1,0 +1,24 @@
+
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./data/scans"],
+      "description": "Accesses physical form scans and mapped JSON data for migration."
+    },
+    "foundry": {
+      "command": "npx",
+      "args": ["-y", "@pranesh.asp/foundry-mcp-server"],
+      "env": {
+        "RPC_URL": "http://localhost:8545",
+        "PRIVATE_KEY": "process.env.LOCAL_ANVIL_KEY"
+      },
+      "description": "Bridges local EVM state to the AI for real-time feedback point audits."
+    },
+    "slither": {
+      "command": "python3",
+      "args": ["-m", "mcp_server_slither"],
+      "description": "Static analysis for verifying anonymity nullifier integrity."
+    }
+  }
+}
